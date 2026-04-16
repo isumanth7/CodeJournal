@@ -6,5 +6,9 @@
  ##### 6. BUILD YOUR REDIS CACHE : https://www.youtube.com/watch?v=m7uN5iHLwMQ&t=1089s
  ##### 7. https://www.youtube.com/@CodeGoat-s2y
  ##### 8. Designing Data-Intensive Applications: Chapters 1 and 2 : https://www.youtube.com/watch?v=G7iU2s7LUzA , https://www.youtube.com/@benjdicken/videos
+
+
+
+  ##### A. https://codefinity.com/category/java?category=java&page=1&refPageSize=12
  
  
