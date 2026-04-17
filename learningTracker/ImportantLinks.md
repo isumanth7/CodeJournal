@@ -8,6 +8,7 @@
   7. https://www.youtube.com/@CodeGoat-s2y
   8. Designing Data-Intensive Applications: Chapters 1 and 2 : https://www.youtube.com/watch?v=G7iU2s7LUzA , https://www.youtube.com/@benjdicken/videos
   9. System Design Course – APIs, Databases, Caching, CDNs freecodecamp https://www.youtube.com/watch?v=C842vFY5kRo
+  10. https://www.youtube.com/@CodeWithSunchitDudeja/shorts
 
   ### Playground Resources
   1. https://codefinity.com/category/java?category=java&page=1&refPageSize=12
