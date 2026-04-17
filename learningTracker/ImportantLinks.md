@@ -13,4 +13,8 @@
 
   ### Blogs
   1. https://codeforces.com/catalog
+
+
+  ### DSA 
+  1. https://codeforces.com/edu/courses
  
