@@ -11,7 +11,7 @@
   10. https://www.youtube.com/@CodeWithSunchitDudeja/shorts
 
   ### Playground Resources
-  1. https://codefinity.com/category/java?category=java&page=1&refPageSize=12
+  1. https://codefinity.com/category/java?category=java&page=1&refPageSize=12 ---> [Introduction to Stream API 2/4](https://codefinity.com/courses/v2/ceac93c7-c645-46f7-85fc-b5e9c0fbaf30)
 
   ### Blogs
   1. https://codeforces.com/catalog
