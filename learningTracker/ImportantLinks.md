@@ -19,4 +19,8 @@
 
   ### DSA 
   1. https://codeforces.com/edu/courses
+
+  ### Interview Prep
+  1. https://hyresnap.com/
+  2. https://learn.techamplifiers.com/web/courses/details/697fafb289858fe2393644a9
  
