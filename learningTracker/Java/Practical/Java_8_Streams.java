@@ -58,7 +58,6 @@ public class Streams_1 {
         System.out.println(ans41);
         System.out.println("-".repeat(30));
 
-
         //Problem-5
         //https://www.youtube.com/watch?v=cU6nA1cnZ1g&list=PL63BDXJjNfTElajNCfg_2u_pbe1Xi7uTy&index=5
         //Given a sentence, find the occurance of a each string
@@ -70,6 +69,7 @@ public class Streams_1 {
         System.out.println(ans51);
         System.out.println("-".repeat(30));
 
+        
         //Problem-6
         //https://www.youtube.com/watch?v=F1wB6DjspUc&list=PL63BDXJjNfTElajNCfg_2u_pbe1Xi7uTy&index=6
         //Given a sentence, find the words with a specified number of vowels
@@ -85,5 +85,50 @@ public class Streams_1 {
         System.out.println("-".repeat(30));
 
 
-    }
+        //Problem-7
+        //https://www.youtube.com/watch?v=QERuQaQT74U&list=PL63BDXJjNfTElajNCfg_2u_pbe1Xi7uTy&index=8
+        //Divide given integer list into lists of even and odd numbers
+        //I/P: {1,2,3,4,5,6,7,8,9,10}
+        int arr7[] = {1,2,3,4,5,6,7,8,9,10};
+        List<Integer> list7 = Arrays.stream(arr7).boxed().collect(Collectors.toList());
+        List<List<Integer>> ans7 = list7.stream()
+                                        .collect(Collectors.partitioningBy(x->x%2==0,Collectors.toList()))
+                                         .entrySet().stream()
+                                          .map(x->x.getValue()).collect(Collectors.toList());
+        System.out.println(ans7);
+        System.out.println("-".repeat(30));
+
+
+
+        //Problem-8
+        //https://www.youtube.com/watch?v=y3h47AqCMIc&list=PL63BDXJjNfTElajNCfg_2u_pbe1Xi7uTy&index=8
+        //Given a word, find the occurrence of each character
+        String s8 = "Mississippi";
+        Map<String,Long> ans8 = Arrays.stream(s8.split("")).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+        //Map<String,Long> ans8 = Arrays.stream(s8.split("")).collect(Collectors.groupingBy(x->x,Collectors.counting()));
+        System.out.println(ans8);
+        System.out.println("-".repeat(30));
+
+
+        //Problem-9
+        //https://www.youtube.com/watch?v=FNvZgvyWqZY&list=PL63BDXJjNfTElajNCfg_2u_pbe1Xi7uTy&index=9
+        //Arrange the numbers in Descending/Ascending Order
+        int[] arr9 = {1111,2,3,4,5};
+        Arrays.stream(arr9).mapToObj(x->x).sorted().collect(Collectors.toList()).forEach(x->System.out.print(x+" "));
+        System.out.println();
+        Arrays.stream(arr9).mapToObj(x->x).sorted(Comparator.reverseOrder()).collect(Collectors.toList()).forEach(x->System.out.print(x+" "));
+        System.out.println();
+        System.out.println("-".repeat(30));
+
+
+        //Problem-10
+        //https://www.youtube.com/watch?v=Cprnsyy7v1k&list=PL63BDXJjNfTElajNCfg_2u_pbe1Xi7uTy&index=10
+        //Given an array, find the sum of unique elements
+        int[] arr10 = { 1,6,7,8,8,9,9,11,11,23,123};
+        int ans10 = Arrays.stream(arr10).distinct().sum();
+        System.out.println(ans10);
+        System.out.println("-".repeat(30));
+
+        }
 }
+
