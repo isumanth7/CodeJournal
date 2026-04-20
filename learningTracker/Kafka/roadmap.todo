@@ -1,0 +1,145 @@
+Kafka Interview Mastery Roadmap (2 hrs/day):
+
+ ─── Week 0: Distributed Systems Prereqs ─────────────────────────
+
+ Day 1-2: Fundamentals
+  ☐ What is a distributed system and why we need them
+  ☐ CAP theorem (Consistency, Availability, Partition tolerance)
+  ☐ Eventual consistency vs strong consistency
+  ☐ Latency vs throughput tradeoffs
+  ☐ Horizontal vs vertical scaling
+
+ Day 3-4: Replication & Partitioning
+  ☐ Why replicate data (fault tolerance, availability)
+  ☐ Leader-follower replication
+  ☐ Synchronous vs asynchronous replication
+  ☐ Data partitioning/sharding strategies
+  ☐ Consistent hashing basics
+
+ Day 5-6: Messaging & Communication
+  ☐ Synchronous vs asynchronous communication
+  ☐ Message queues vs event streams (pub/sub)
+  ☐ Delivery guarantees (at-most-once, at-least-once, exactly-once)
+  ☐ Idempotency — what it means and why it matters
+  ☐ Backpressure concept
+
+ Day 7: Consensus & Coordination
+  ☐ Why consensus is hard (network partitions, failures)
+  ☐ Leader election basics
+  ☐ ZooKeeper — what it does (high level)
+  ☐ Raft consensus (high level overview)
+  ☐ Review: connect all concepts to why Kafka needs them
+
+ ─── Week 1: Core Fundamentals ───────────────────────────────────
+
+ Day 1-2: Architecture Basics
+  ☐ What is Kafka and why it exists
+  ☐ Brokers, clusters, and ZooKeeper/KRaft
+  ☐ Topics and partitions
+  ☐ Offsets and ordering guarantees
+  ☐ Replication factor and leader/follower model
+  ☐ Set up local Kafka cluster (Docker)
+
+ Day 3-4: Producers
+  ☐ Producer architecture and workflow
+  ☐ Partitioning strategies (key-based, round-robin, custom)
+  ☐ Acks (0, 1, all) and durability tradeoffs
+  ☐ Batching and linger.ms
+  ☐ Retries and idempotent producer
+  ☐ Compression (snappy, lz4, zstd)
+  ☐ Hands-on: Write a producer in your preferred language
+
+ Day 5-6: Consumers
+  ☐ Consumer groups and group coordinator
+  ☐ Partition assignment strategies (range, round-robin, sticky, cooperative)
+  ☐ Rebalancing — causes and impact
+  ☐ Offset management (auto vs manual commit)
+  ☐ at-least-once vs at-most-once vs exactly-once
+  ☐ Hands-on: Write a consumer, test rebalancing
+
+ Day 7: Review & Practice
+  ☐ Revisit weak areas from days 1-6
+  ☐ Draw architecture diagrams from memory
+  ☐ Answer 10 basic Kafka interview questions
+
+ ─── Week 2: Internals & Performance ────────────────────────────
+
+ Day 8-9: Storage & Performance
+  ☐ Log segments and log retention (time/size based)
+  ☐ Log compaction (how and when to use)
+  ☐ Page cache and OS-level optimizations
+  ☐ Zero-copy transfer (sendfile)
+  ☐ Sequential I/O and why Kafka is fast
+  ☐ Segment indexing (.index and .timeindex files)
+
+ Day 10-11: Reliability & Fault Tolerance
+  ☐ ISR (In-Sync Replicas) deep dive
+  ☐ Leader election process
+  ☐ min.insync.replicas and unclean leader election
+  ☐ Transactions and exactly-once semantics (EOS)
+  ☐ Idempotent producer + transactional producer
+  ☐ Consumer read_committed isolation level
+
+ Day 12: Kafka Streams
+  ☐ KStreams vs KTable
+  ☐ Stateless operations (filter, map, flatMap)
+  ☐ Stateful operations (aggregate, join, windowing)
+  ☐ State stores and changelog topics
+  ☐ When to use Streams vs Flink/Spark
+
+ Day 13: Kafka Connect & Ecosystem
+  ☐ Source and Sink connectors
+  ☐ Schema Registry and Avro/Protobuf
+  ☐ Kafka vs RabbitMQ vs SQS vs Pulsar
+  ☐ Kafka on Kubernetes (Strimzi)
+  ☐ AWS MSK overview
+
+ Day 14: Review & Practice
+  ☐ Revisit weak areas from days 8-13
+  ☐ Practice explaining concepts out loud
+  ☐ Answer 10 intermediate interview questions
+
+ ─── Week 3: Advanced & Interview Prep ──────────────────────────
+
+ Day 15-16: System Design with Kafka
+  ☐ Event sourcing and CQRS patterns
+  ☐ Design: real-time analytics pipeline
+  ☐ Design: distributed log aggregation
+  ☐ Design: event-driven microservices
+  ☐ Design: CDC (Change Data Capture) pipeline
+  ☐ Backpressure handling strategies
+
+ Day 17-18: Operations & Troubleshooting
+  ☐ Monitoring (consumer lag, under-replicated partitions)
+  ☐ Common issues: consumer lag, rebalancing storms, disk full
+  ☐ Partition reassignment and scaling
+  ☐ Kafka security (SSL, SASL, ACLs)
+  ☐ Tuning: throughput vs latency tradeoffs
+  ☐ Multi-datacenter replication (MirrorMaker 2)
+
+ Day 19-20: Mock Interviews
+  ☐ Practice 5 "explain concept" questions
+  ☐ Practice 3 "design a system using Kafka" questions
+  ☐ Practice 3 "troubleshoot this scenario" questions
+  ☐ Record yourself and review clarity
+  ☐ Final weak-area review
+
+ ─── Key Resources ───────────────────────────────────────────────
+
+  ☐ Book: "Kafka: The Definitive Guide" (Ch 1-6 priority)
+  ☐ Official docs: https://kafka.apache.org/documentation/
+  ☐ Confluent blog and developer tutorials
+  ☐ GitHub: conduktor/kafka-stack-docker-compose (local setup)
+
+ ─── Top Interview Questions to Master ───────────────────────────
+
+  ☐ How does Kafka achieve high throughput?
+  ☐ Explain consumer group rebalancing
+  ☐ How does Kafka guarantee ordering?
+  ☐ What happens when a broker goes down?
+  ☐ Exactly-once semantics — how does it work?
+  ☐ Kafka vs traditional message queues — when to use which?
+  ☐ How would you handle consumer lag in production?
+  ☐ Explain log compaction and its use cases
+  ☐ How does Kafka handle backpressure?
+  ☐ Design a notification system using Kafka
