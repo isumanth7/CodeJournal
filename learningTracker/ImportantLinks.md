@@ -18,6 +18,14 @@
   17. https://sadservers.com/
   18. https://k8sgames.com/
   19. https://velocode.ai/learn/ai_engineer
+  20. https://codesignal.com/learn/courses/introduction-to-spring-boot-and-spring-core-with-kotlin
+  21. https://www.geeksforgeeks.org/batch/dsa-online-2?tab=Resources
+  22. https://codesignal.com/learn/paths/spring-boot-rest-api-with-java-gradle
+  23. https://www.udemy.com/home/my-courses/learning/?p=4
+  24. https://javaexpress.graphy.com/t/u/activeCourses
+  25. https://www.airtribe.live/dashboard/backend-engineering/courses/SAKIQWM8A0GA/home
+  26. https://www.scaler.com/academy/mentee-dashboard/todos
+  27. https://refactoring.guru/course
 
   ### Playground Resources
   1. https://codefinity.com/category/java?category=java&page=1&refPageSize=12 ---> [Introduction to Stream API 2/4](https://codefinity.com/courses/v2/ceac93c7-c645-46f7-85fc-b5e9c0fbaf30)
